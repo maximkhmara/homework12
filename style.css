@@ -1,0 +1,44 @@
+.text-field {
+  width: 300px;
+  border: 2px solid hsl(223, 10%, 80%);
+  border-radius: 14px;
+  box-shadow: hsl(223, 10%, 80%);
+  outline: transparent;
+  padding: 15px;
+  padding-inline-end: 3.5em;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: 'Helvetica';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  background: transparent;
+  }
+    
+.text-field::placeholder {
+  color: hsl(240, 0%, 54%);
+}
+
+.hide-div {
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  height: 58px;
+  background: hsl( 223 ,90%,50%);
+  font-family: 'Helvetica';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.hide-div.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
